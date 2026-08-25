@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Manyu 🎂❤️</title>
+
+<style>
+
+/* =========================================================
+   GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 0, 140, 0.15),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 200, 255, 0.12),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 80%,
+            rgba(140, 0, 255, 0.15),
+            transparent 30%
+        ),
+        #050511;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   LOADING SCREEN
+========================================================= */
+
+#loading {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background: #050511;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    transition: 1s;
+}
+
+.loader {
+    width: 65px;
+    height: 65px;
+
+    border: 4px solid rgba(255,255,255,0.15);
+    border-top-color: #ff4da6;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+#loading p {
+    margin-top: 20px;
+
+    color: #ddd;
+
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   BACKGROUND PARTICLES
+========================================================= */
+
+#particles {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    opacity: 0.7;
+
+    animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+
+    from {
+        opacity: 0.2;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+
+/* =========================================================
+   MUSIC BUTTON
+========================================================= */
+
+.music-btn {
+    position: fixed;
+
+    right: 20px;
+    top: 20px;
+
+    z-index: 1000;
+
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    backdrop-filter: blur(15px);
+
+    cursor: pointer;
+
+    font-size: 21px;
+
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    transform: scale(1.1);
+
+    background: rgba(255,255,255,0.18);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.hero-content {
+    max-width: 950px;
+}
+
+.small-title {
+    letter-spacing: 6px;
+
+    font-size: 14px;
+
+    color: #ff9ad0;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 130px);
+
+    font-weight: 800;
+
+    line-height: 0.9;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff5ca8,
+            #ffffff,
+            #7ddcff,
+            #ff5ca8
+        );
+
+    background-size: 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.hero h2 {
+    margin-top: 25px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(35px, 6vw, 65px);
+
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+.hero p {
+    margin: 25px auto;
+
+    max-width: 700px;
+
+    color: #c8c8d5;
+
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   MAIN BUTTON
+========================================================= */
+
+.start-btn {
+    border: none;
+
+    padding: 16px 35px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff3d9b,
+            #8e4dff
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 30px
+        rgba(255,61,155,0.35);
+
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform:
+        translateY(-4px)
+        scale(1.04);
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 100vh;
+
+    padding: 100px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.section-inner {
+    width: min(1000px, 100%);
+
+    text-align: center;
+}
+
+.section-title {
+    font-size: clamp(35px, 6vw, 60px);
+
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #aaaabd;
+
+    margin-bottom: 60px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   TODAY TIMER
+========================================================= */
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.time-box {
+    width: 130px;
+    height: 130px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    background:
+        rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.25);
+}
+
+.time-box:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(255,100,180,0.5);
+}
+
+.time-box span {
+    font-size: 40px;
+
+    font-weight: 700;
+
+    color: #ff9ad0;
+}
+
+.time-box small {
+    color: #aaa;
+
+    margin-top: 5px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   BALLOONS
+========================================================= */
+
+.balloons {
+    position: fixed;
+
+    bottom: -150px;
+
+    left: 0;
+
+    width: 100%;
+
+    pointer-events: none;
+
+    z-index: 3;
+}
+
+.balloon {
+    position: absolute;
+
+    width: 45px;
+    height: 60px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    animation:
+        balloonFloat
+        12s linear infinite;
+}
+
+.balloon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 100px;
+
+    background:
+        rgba(255,255,255,0.4);
+
+    top: 58px;
+
+    left: 50%;
+}
+
+@keyframes balloonFloat {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(-5deg);
+    }
+
+    100% {
+        transform:
+            translateY(-130vh)
+            rotate(10deg);
+    }
+}
+
+
+/* =========================================================
+   CAKE
+========================================================= */
+
+.cake-container {
+    margin: 40px auto;
+
+    width: 300px;
+
+    height: 330px;
+
+    perspective: 1000px;
+}
+
+.cake {
+    position: relative;
+
+    width: 220px;
+
+    height: 130px;
+
+    margin: 100px auto;
+
+    transform-style: preserve-3d;
+
+    animation:
+        cakeRotate
+        7s linear infinite;
+}
+
+@keyframes cakeRotate {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.cake-base {
+    position: absolute;
+
+    width: 220px;
+
+    height: 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff5da8,
+            #8d4cff
+        );
+
+    border-radius:
+        15px 15px 30px 30px;
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.5),
+
+        inset 0 -10px 20px
+        rgba(0,0,0,0.15);
+}
+
+.cake-top {
+    position: absolute;
+
+    width: 220px;
+
+    height: 45px;
+
+    top: -20px;
+
+    background: #ffb6d9;
+
+    border-radius: 50%;
+}
+
+.cream {
+    position: absolute;
+
+    width: 35px;
+
+    height: 35px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    top: 20px;
+}
+
+.cream:nth-child(1) {
+    left: 35px;
+}
+
+.cream:nth-child(2) {
+    left: 90px;
+}
+
+.cream:nth-child(3) {
+    left: 145px;
+}
+
+
+/* =========================================================
+   CANDLE
+========================================================= */
+
+.candle {
+    position: absolute;
+
+    width: 13px;
+
+    height: 55px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #fff,
+            #fff 6px,
+            #ff4da6 6px,
+            #ff4da6 12px
+        );
+
+    left: 103px;
+
+    top: -72px;
+}
+
+.flame {
+    position: absolute;
+
+    width: 22px;
+
+    height: 32px;
+
+    background:
+        radial-gradient(
+            circle at 50% 70%,
+            #fff,
+            #ffd000 35%,
+            #ff6b00 70%
+        );
+
+    border-radius:
+        50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    left: -5px;
+
+    top: -30px;
+
+    animation:
+        flame
+        0.3s infinite alternate;
+}
+
+@keyframes flame {
+
+    to {
+        transform:
+            rotate(-45deg)
+            scale(1.12);
+    }
+}
+
+.flame.off {
+    opacity: 0;
+
+    animation: none;
+}
+
+.blow-btn {
+    padding: 14px 28px;
+
+    border-radius: 40px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.blow-btn:hover {
+    transform: scale(1.04);
+
+    background:
+        rgba(255,255,255,0.15);
+}
+
+
+/* =========================================================
+   LETTER
+========================================================= */
+
+.letter-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.10),
+            rgba(255,255,255,0.03)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.3);
+}
+
+.letter {
+    min-height: 400px;
+
+    text-align: left;
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    font-size: 25px;
+
+    line-height: 1.9;
+
+    color: #f7ddeb;
+}
+
+.cursor {
+    display: inline-block;
+
+    width: 2px;
+
+    height: 25px;
+
+    background: white;
+
+    animation:
+        blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   SECRET SECTION
+========================================================= */
+
+.secret {
+    display: none;
+
+    margin-top: 30px;
+
+    animation:
+        secretShow
+        1s ease;
+}
+
+@keyframes secretShow {
+
+    from {
+        opacity: 0;
+
+        transform:
+            scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+}
+
+.secret h3 {
+    font-family:
+        'Dancing Script';
+
+    font-size: 50px;
+
+    color: #ff9ad0;
+}
+
+.secret p {
+    color: #ccc;
+
+    margin-top: 15px;
+
+    line-height: 1.9;
+
+    max-width: 750px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.secret-btn {
+    margin-top: 30px;
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #111;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.secret-btn:hover {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   FIREWORKS
+========================================================= */
+
+#fireworks {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 10;
+}
+
+.firework {
+    position: absolute;
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    animation:
+        explode
+        1.3s ease-out forwards;
+}
+
+@keyframes explode {
+
+    0% {
+        transform:
+            translate(0,0)
+            scale(1);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translate(
+                calc(var(--x) * 1px),
+                calc(var(--y) * 1px)
+            )
+            scale(0.2);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+.heart {
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 25px;
+
+    z-index: 20;
+
+    pointer-events: none;
+
+    animation:
+        heartUp
+        5s linear forwards;
+}
+
+@keyframes heartUp {
+
+    0% {
+        transform:
+            translateY(0)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg)
+            scale(1.4);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   FINAL SECTION
+========================================================= */
+
+.final {
+    text-align: center;
+}
+
+.final h2 {
+    font-family:
+        'Dancing Script';
+
+    font-size:
+        clamp(50px, 8vw, 90px);
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff75b8,
+            white,
+            #8ddcff
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.final p {
+    color: #aaa;
+
+    margin-top: 20px;
+
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:600px) {
+
+    .music-btn {
+        width: 45px;
+        height: 45px;
+
+        right: 15px;
+        top: 15px;
+    }
+
+    .small-title {
+        letter-spacing: 3px;
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .time-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .time-box span {
+        font-size: 30px;
+    }
+
+    .letter-card {
+        padding: 25px;
+    }
+
+    .letter {
+        font-size: 21px;
+    }
+
+    .cake-container {
+        transform: scale(0.85);
+    }
+
+    section {
+        padding: 80px 15px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     LOADING
+========================================================= -->
+
+<div id="loading">
+
+    <div class="loader"></div>
+
+    <p>
+        Preparing a little surprise for Manyu...
+    </p>
+
+</div>
+
+
+<!-- =========================================================
+     MUSIC BUTTON
+========================================================= -->
+
+<button
+    class="music-btn"
+    id="musicBtn">
+
+    🎵
+
+</button>
+
+
+<!--
+=========================================================
+MUSIC
+
+Put birthday.mp3 in the SAME folder as index.html.
+
+Then uncomment the source line.
+=========================================================
+-->
+
+<audio
+    id="birthdayMusic"
+    loop>
+
+    <!--
+    <source
+        src="birthday.mp3"
+        type="audio/mpeg">
+    -->
+
+</audio>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div id="particles"></div>
+
+<div id="fireworks"></div>
+
+<div
+    class="balloons"
+    id="balloons">
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+
+        <div class="small-title">
+
+            A Special Day • 25 August 2026
+
+        </div>
+
+
+        <h1>
+
+            HAPPY<br>
+            BIRTHDAY
+
+        </h1>
+
+
+        <h2>
+
+            Manyu ❤️
+
+        </h2>
+
+
+        <p>
+
+            Today isn't just another day...
+
+            <br>
+
+            It's the day the world became
+            a little brighter because you were born. ✨
+
+        </p>
+
+
+        <button
+            class="start-btn"
+            onclick="startSurprise()">
+
+            🎁 Open Your Surprise
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TODAY SECTION
+========================================================= -->
+
+<section id="today">
+
+    <div class="section-inner">
+
+
+        <h2 class="section-title">
+
+            🎉 TODAY IS YOUR DAY ✨
+
+        </h2>
+
+
+        <p class="section-subtitle">
+
+            The wait is over...
+
+            <br>
+
+            <strong
+                style="color:#ff9ad0;font-size:20px;">
+
+                TODAY IS MANYU'S BIRTHDAY! 🎂❤️
+
+            </strong>
+
+        </p>
+
+
+        <div class="countdown">
+
+
+            <div class="time-box">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <small>
+                    HOURS
+                </small>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <small>
+                    MINUTES
+                </small>
+
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <small>
+                    SECONDS
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+        <p
+            style="
+                margin-top:40px;
+                color:#ff9ad0;
+                font-size:18px;
+            ">
+
+            Every second of today belongs to you. 💫
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CAKE SECTION
+========================================================= -->
+
+<section>
+
+    <div class="section-inner">
+
+
+        <h2 class="section-title">
+
+            Make A Wish 🎂
+
+        </h2>
+
+
+        <p class="section-subtitle">
+
+            Close your eyes...
+
+            <br>
+
+            Make your biggest wish... ✨
+
+        </p>
+
+
+        <div class="cake-container">
+
+
+            <div class="cake">
+
+
+                <div class="candle">
+
+                    <div
+                        class="flame"
+                        id="flame">
+                    </div>
+
+                </div>
+
+
+                <div class="cake-base">
+                </div>
+
+
+                <div class="cake-top">
+
+
+                    <div class="cream">
+                    </div>
+
+
+                    <div class="cream">
+                    </div>
+
+
+                    <div class="cream">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            class="blow-btn"
+            onclick="blowCandle()">
+
+            🌬️ Blow The Candle
+
+        </button>
+
+
+        <p
+            id="wishMessage"
+            style="
+                margin-top:25px;
+                color:#ff9ad0;
+                font-size:18px;
+            ">
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LETTER SECTION
+========================================================= -->
+
+<section>
+
+    <div class="section-inner">
+
+
+        <h2 class="section-title">
+
+            💌 A Little Letter For You
+
+        </h2>
+
+
+        <p class="section-subtitle">
+
+            From my heart to my
+            brother from another mother. ❤️
+
+        </p>
+
+
+        <div class="letter-card">
+
+
+            <div
+                class="letter"
+                id="letter">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECRET SECTION
+========================================================= -->
+
+<section>
+
+    <div class="section-inner">
+
+
+        <h2 class="section-title">
+
+            Wait... There's More 👀
+
+        </h2>
+
+
+        <p class="section-subtitle">
+
+            You didn't think that was everything,
+            did you?
+
+        </p>
+
+
+        <button
+            class="start-btn"
+            onclick="openSecret()">
+
+            🔐 Unlock Secret
+
+        </button>
+
+
+        <div
+            class="secret"
+            id="secret">
+
+
+            <h3>
+
+                One More Thing... ❤️
+
+            </h3>
+
+
+            <p>
+
+                No matter how much time passes,
+                no matter how much life changes...
+
+                <br><br>
+
+                You will always have a special place
+                in my heart as my little brother.
+
+                <br><br>
+
+                Some bonds don't need blood relations.
+
+                <br>
+
+                They just need a connection,
+                understanding and a little madness. 😂❤️
+
+                <br><br>
+
+                And ours is definitely one of them. 🫂💙
+
+            </p>
+
+
+            <button
+                class="secret-btn"
+                onclick="finalSurprise()">
+
+                🎆 One Last Surprise
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL SECTION
+========================================================= -->
+
+<section>
+
+    <div class="section-inner final">
+
+
+        <div
+            style="
+                font-size:70px;
+                margin-bottom:30px;
+            ">
+
+            🎂 🎈 🎁
+
+        </div>
+
+
+        <h2>
+
+            Happy Birthday,
+
+            <br>
+
+            Manyu! ❤️
+
+        </h2>
+
+
+        <p>
+
+            May your life always be filled
+            with happiness, success,
+            adventures and beautiful memories.
+
+        </p>
+
+
+        <p
+            style="
+                margin-top:30px;
+                color:#ff9ad0;
+                font-size:18px;
+            ">
+
+            Forever my little brother
+
+            <br>
+
+            &
+
+            <br>
+
+            Forever my Brother From Another Mother! 🫂💙
+
+        </p>
+
+
+        <p
+            style="
+                margin-top:40px;
+                color:#ff8ac7;
+            ">
+
+            Made with ❤️ especially for you.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 • Manyu's Birthday Surprise 🎂✨
+
+</footer>
+
+
+
+<script>
+
+
+/* =========================================================
+   LOADING SCREEN
+========================================================= */
+
+window.addEventListener(
+    "load",
+    function() {
+
+        setTimeout(
+            function() {
+
+                document.getElementById(
+                    "loading"
+                ).style.opacity = "0";
+
+
+                setTimeout(
+                    function() {
+
+                        document.getElementById(
+                            "loading"
+                        ).style.display = "none";
+
+                    },
+                    1000
+                );
+
+            },
+            1500
+        );
+
+    }
+);
+
+
+/* =========================================================
+   PARTICLES
+========================================================= */
+
+const particleContainer =
+    document.getElementById(
+        "particles"
+    );
+
+
+for(
+    let i = 0;
+    i < 100;
+    i++
+) {
+
+    const particle =
+        document.createElement(
+            "div"
+        );
+
+
+    particle.className =
+        "particle";
+
+
+    particle.style.left =
+        Math.random() * 100 + "%";
+
+
+    particle.style.top =
+        Math.random() * 100 + "%";
+
+
+    particle.style.animationDelay =
+        Math.random() * 3 + "s";
+
+
+    particleContainer.appendChild(
+        particle
+    );
+
+}
+
+
+/* =========================================================
+   BALLOONS
+========================================================= */
+
+const balloonContainer =
+    document.getElementById(
+        "balloons"
+    );
+
+
+for(
+    let i = 0;
+    i < 15;
+    i++
+) {
+
+    const balloon =
+        document.createElement(
+            "div"
+        );
+
+
+    balloon.className =
+        "balloon";
+
+
+    balloon.style.left =
+        Math.random() * 100 + "%";
+
+
+    balloon.style.animationDelay =
+        Math.random() * 10 + "s";
+
+
+    balloon.style.background =
+        `hsl(
+            ${Math.random() * 360},
+            80%,
+            65%
+        )`;
+
+
+    balloonContainer.appendChild(
+        balloon
+    );
+
+}
+
+
+/* =========================================================
+   OPEN SURPRISE
+========================================================= */
+
+function startSurprise() {
+
+    document.getElementById(
+        "today"
+    ).scrollIntoView({
+
+        behavior: "smooth"
+
+    });
+
+
+    createFireworks();
+
+    createHearts();
+
+}
+
+
+/* =========================================================
+   BIRTHDAY TIMER
+========================================================= */
+
+/*
+    TODAY = 25 AUGUST 2026
+
+    Because today is Manyu's birthday,
+    the timer intentionally shows:
+
+    00 HOURS
+    00 MINUTES
+    00 SECONDS
+*/
+
+function updateBirthdayTimer() {
+
+    document.getElementById(
+        "hours"
+    ).textContent = "00";
+
+
+    document.getElementById(
+        "minutes"
+    ).textContent = "00";
+
+
+    document.getElementById(
+        "seconds"
+    ).textContent = "00";
+
+}
+
+
+updateBirthdayTimer();
+
+
+/* =========================================================
+   BLOW CANDLE
+========================================================= */
+
+function blowCandle() {
+
+    const flame =
+        document.getElementById(
+            "flame"
+        );
+
+
+    flame.classList.add(
+        "off"
+    );
+
+
+    document.getElementById(
+        "wishMessage"
+    ).textContent =
+        "✨ May every wish you make today come true! ✨";
+
+
+    createFireworks();
+
+    createHearts();
+
+}
+
+
+/* =========================================================
+   PERSONAL LETTER
+========================================================= */
+
+const message = `Happy Birthday, Manyu! 🎂✨
+
+Life lo unexpected ga kalisina konni people,
+mana life lo permanent place create chesukuntaru.
+Nuvvu alanti person.
+
+Own brother kaakapoyina,
+ninnu naa little brother laga feel avvadam
+naaku chala natural ga anipisthundi.
+
+Anduke nuvvu just "friend" kaadu...
+
+Naa brother from another mother. 😄❤️
+
+Mana madhya unna fights,
+teasing,
+silly conversations,
+laughs...
+
+All these little things
+make our bond special.
+
+Manyu, nee future chala beautiful ga undali.
+
+Nuvvu dream chesina prati dream achieve cheyyali.
+
+Life lo eppudu confidence tho munduku vellali.
+
+Bad days vachina,
+avi temporary ani gurthupettukoni
+strong ga undu.
+
+And one more thing...
+
+Age perigina,
+responsibilities perigina,
+
+nuvvu naa little brother ane title
+matram eppudu change avvadu! 😂❤️
+
+Happy Birthday, Manyu! 🎂🥳
+
+God always bless you
+and keep you smiling.
+
+Forever my little brother
+
+&
+
+Forever my Brother from Another Mother! 🫂💙`;
+
+
+let index = 0;
+
+
+/* =========================================================
+   TYPING EFFECT
+========================================================= */
+
+function typeLetter() {
+
+    if(
+        index <
+        message.length
+    ) {
+
+        const letter =
+            document.getElementById(
+                "letter"
+            );
+
+
+        letter.innerHTML =
+            message
+                .substring(
+                    0,
+                    index
+                )
+                .replace(
+                    /\n/g,
+                    "<br>"
+                )
+            +
+            '<span class="cursor"></span>';
+
+
+        index++;
+
+
+        setTimeout(
+            typeLetter,
+            35
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   LETTER INTERSECTION OBSERVER
+========================================================= */
+
+const letterObserver =
+    new IntersectionObserver(
+        function(entries) {
+
+            if(
+                entries[0].isIntersecting
+                &&
+                index === 0
+            ) {
+
+                typeLetter();
+
+                letterObserver.disconnect();
+
+            }
+
+        },
+        {
+            threshold: 0.3
+        }
+    );
+
+
+letterObserver.observe(
+    document.getElementById(
+        "letter"
+    )
+);
+
+
+/* =========================================================
+   OPEN SECRET
+========================================================= */
+
+function openSecret() {
+
+    const secret =
+        document.getElementById(
+            "secret"
+        );
+
+
+    secret.style.display =
+        "block";
+
+
+    createFireworks();
+
+    createHearts();
+
+}
+
+
+/* =========================================================
+   FIREWORKS
+========================================================= */
+
+function createFireworks() {
+
+    const container =
+        document.getElementById(
+            "fireworks"
+        );
+
+
+    for(
+        let i = 0;
+        i < 10;
+        i++
+    ) {
+
+        setTimeout(
+            function() {
+
+                const x =
+                    Math.random()
+                    *
+                    window.innerWidth;
+
+
+                const y =
+                    Math.random()
+                    *
+                    (window.innerHeight * 0.6);
+
+
+                for(
+                    let j = 0;
+                    j < 35;
+                    j++
+                ) {
+
+                    const particle =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    particle.className =
+                        "firework";
+
+
+                    particle.style.left =
+                        x + "px";
+
+
+                    particle.style.top =
+                        y + "px";
+
+
+                    const angle =
+                        Math.random()
+                        *
+                        Math.PI
+                        *
+                        2;
+
+
+                    const distance =
+                        50
+                        +
+                        Math.random()
+                        *
+                        150;
+
+
+                    particle.style.setProperty(
+                        "--x",
+                        Math.cos(angle)
+                        *
+                        distance
+                    );
+
+
+                    particle.style.setProperty(
+                        "--y",
+                        Math.sin(angle)
+                        *
+                        distance
+                    );
+
+
+                    container.appendChild(
+                        particle
+                    );
+
+
+                    setTimeout(
+                        function() {
+
+                            particle.remove();
+
+                        },
+                        1300
+                    );
+
+                }
+
+            },
+            i * 250
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   HEARTS
+========================================================= */
+
+function createHearts() {
+
+    const hearts = [
+        "❤️",
+        "💖",
+        "💕",
+        "💗",
+        "💓",
+        "💙"
+    ];
+
+
+    for(
+        let i = 0;
+        i < 20;
+        i++
+    ) {
+
+        setTimeout(
+            function() {
+
+                const heart =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                heart.className =
+                    "heart";
+
+
+                heart.innerHTML =
+                    hearts[
+                        Math.floor(
+                            Math.random()
+                            *
+                            hearts.length
+                        )
+                    ];
+
+
+                heart.style.left =
+                    Math.random()
+                    *
+                    100
+                    +
+                    "%";
+
+
+                heart.style.animationDuration =
+                    3
+                    +
+                    Math.random()
+                    *
+                    3
+                    +
+                    "s";
+
+
+                document.body.appendChild(
+                    heart
+                );
+
+
+                setTimeout(
+                    function() {
+
+                        heart.remove();
+
+                    },
+                    6000
+                );
+
+
+            },
+            i * 150
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   FINAL SURPRISE
+========================================================= */
+
+function finalSurprise() {
+
+    createFireworks();
+
+
+    setTimeout(
+        createFireworks,
+        700
+    );
+
+
+    setTimeout(
+        createFireworks,
+        1400
+    );
+
+
+    setTimeout(
+        createFireworks,
+        2100
+    );
+
+
+    createHearts();
+
+
+    setTimeout(
+        createHearts,
+        1000
+    );
+
+
+    setTimeout(
+        createHearts,
+        2000
+    );
+
+
+    setTimeout(
+        function() {
+
+            alert(
+                "🎂 HAPPY BIRTHDAY MANYU! ❤️\n\n"
+                +
+                "Forever my little brother! 🫂\n"
+                +
+                "Forever my Brother From Another Mother! 💙"
+            );
+
+        },
+        1500
+    );
+
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+const music =
+    document.getElementById(
+        "birthdayMusic"
+    );
+
+
+const musicBtn =
+    document.getElementById(
+        "musicBtn"
+    );
+
+
+let playing = false;
+
+
+musicBtn.addEventListener(
+    "click",
+    async function() {
+
+
+        if(
+            !music.querySelector(
+                "source"
+            )
+        ) {
+
+            alert(
+                "🎵 Add birthday.mp3 to "
+                +
+                "the same folder as index.html!"
+            );
+
+            return;
+
+        }
+
+
+        if(!playing) {
+
+            try {
+
+                await music.play();
+
+                musicBtn.textContent =
+                    "🔊";
+
+                playing = true;
+
+            }
+
+            catch(error) {
+
+                alert(
+                    "Please click the music "
+                    +
+                    "button again to start."
+                );
+
+            }
+
+        }
+
+        else {
+
+            music.pause();
+
+            musicBtn.textContent =
+                "🎵";
+
+            playing = false;
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   AUTOMATIC HEARTS
+========================================================= */
+
+setTimeout(
+    function() {
+
+        createHearts();
+
+    },
+    4000
+);
+
+</script>
+
+</body>
+</html>
